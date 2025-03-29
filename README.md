@@ -1,7 +1,8 @@
 # PetitTube Audio Sampler and SD Recorder
 
 ## Description
-This project automatically records audio samples from randomly selected YouTube videos using PetitTube. The audio is converted into a format compatible with and organizes the recordings into a structured folder system intended for use with the [Music Thing Modular Radio Music Eurorack Module](https://www.musicthing.co.uk/Radio-Music/). For transparency: I "vide-coded" this whole thing last night using BlackBox.ai and ChatGPT. 
+This python project automatically records audio samples from randomly selected YouTube videos using PetitTube. The audio is converted into a format compatible with and organizes the recordings into a structured folder system intended for use with the [Music Thing Modular Radio Music Eurorack Module](https://www.musicthing.co.uk/Radio-Music/). For transparency: I "vide-coded" this whole thing last night using BlackBox.ai and ChatGPT. 
+
 
 ## Badges
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -61,6 +62,36 @@ python download_audio.py
 ```
 
 Filling all 16 folders with 48 samples each will take some time. Probably around 20-30 mins.
+
+
+## How it works
+Here's a quick rundown:
+
+### Setup:
+- Imports necessary libraries for web requests, HTML parsing, audio processing, and file management.
+- Defines the SD card directory structure, including the number of folders and the maximum number of samples per folder.
+- Creates the necessary folders on the SD card.
+
+### Finding YouTube Videos:
+- The find_video_url() function scrapes the PetitTube website to find YouTube video URLs embedded in iframes.
+- Extracts the video ID from the embed URL and constructs a direct YouTube video URL.
+- Handles potential errors and retries if no valid video is found.
+
+### Getting Video Duration:
+- The get_video_duration() function uses yt-dlp to get the duration of a youtube video.
+- The duration is then converted into total seconds.
+
+### Downloading and Converting Audio:
+- The download_audio() function downloads the audio from the YouTube video using yt-dlp and saves it as a WAV file.
+- It then uses ffmpeg to convert the WAV file to mono, 16-bit, 44.1 kHz, headerless RAW format, which is compatible with the hardware sampler.
+- The temporary wav file is deleted after the conversion is complete.
+- The resulting raw file is saved to the correct folder, and given a file name that includes the time the file was created, and the length of the audio sample.
+
+### Main Loop:
+- The main() function iterates through the folders on the SD card.
+- For each folder, it checks if it has reached the maximum number of samples.
+- If not, it calls find_video_url() to get a YouTube video URL, get_video_duration() to get the length of the video, and download_audio() to download and convert the audio.
+- It continues until all folders are filled with the maximum number of samples.
 
 
 ## Support
