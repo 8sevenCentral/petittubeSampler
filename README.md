@@ -117,16 +117,19 @@ ffplay -f s16le -ar 44100 -ac 1 yourfile.raw
 The script will create a new SD card directory and start filling it.
 
 ## Appendix
-For additional details setting up the SD Card for the Radio Music Module, check out Tom's repo: 
+### Tom's repo: 
+For additional details on setting up the SD Card for the Radio Music Module
 - https://github.com/TomWhitwell/RadioMusic/wiki/SD-Card%3A-Format-and-File-Structure
 
-Useful video for additional assistance setting up the SD Card:
+### Alt Firmware 
+- downloads can be found here: https://github.com/TomWhitwell/RadioMusic/wiki/Alternative-firmware-for-Radio-Music
+
+### Useful video for additional assistance setting up the SD Card:
 
 [![Preparing Samples for Radio Music Eurorack Sampler](http://img.youtube.com/vi/bnpQtR3-qWc/0.jpg)](https://www.youtube.com/watch?v=bnpQtR3-qWc)
 
-Alternate firmware exists for this amazing module and can be seen/heard here:
+### Alternate Firmware Demo
 
 [![Music Thing Radio Music alt. firmware](http://img.youtube.com/vi/znC3cyozuME/0.jpg)](https://www.youtube.com/watch?v=znC3cyozuME)
 
-Alt Firmware downloads can be found here: https://github.com/TomWhitwell/RadioMusic/wiki/Alternative-firmware-for-Radio-Music
 
