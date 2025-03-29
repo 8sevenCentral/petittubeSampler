@@ -122,11 +122,11 @@ For additional details setting up the SD Card for the Radio Music Module, check 
 
 Useful video for additional assistance setting up the SD Card:
 
-[![Preparing Samples for Radio Music Eurorack Sampler](http://img.youtube.com/vi/znC3cyozuME/0.jpg)](https://www.youtube.com/watch?v=bnpQtR3-qWc)
+[![Preparing Samples for Radio Music Eurorack Sampler](http://img.youtube.com/vi/bnpQtR3-qWc/0.jpg)](https://www.youtube.com/watch?v=bnpQtR3-qWc)
 
 Alternate firmware exists for this amazing module and can be seen/heard here:
 
-[![Music Thing Radio Music alt. firmware](http://img.youtube.com/vi/znC3cyozuME&t=80s/0.jpg)](https://www.youtube.com/watch?v=znC3cyozuME&t=80s)
+[![Music Thing Radio Music alt. firmware](http://img.youtube.com/vi/znC3cyozuME/0.jpg)](https://www.youtube.com/watch?v=znC3cyozuME)
 
 Alt Firmware downloads can be found here: https://github.com/TomWhitwell/RadioMusic/wiki/Alternative-firmware-for-Radio-Music
 
