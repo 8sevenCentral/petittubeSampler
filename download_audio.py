@@ -108,6 +108,17 @@ def main():
                 download_audio(video_url, duration, folder)
                 file_count += 1
     print("\n✅ All samples recorded successfully! Happy Patching :)")
-
+    print("\n")
+    print(r"      /######                                                     /######      ")
+    print(r"     /##__  ##                                                   /##__  ##     ")
+    print(r"    | ##  \ ##  /#######  /######  /##    /## /######  /####### | ##  \__/     ")
+    print(r"    |  ######/ /##_____/ /##__  ##|  ##  /##//##__  ##| ##__  ##| ##           ")
+    print(r"     >##__  ##|  ###### | ######## \  #$/##/| ########| ##  \ ##| ##           ")
+    print(r"    | ##  \ ## \____  ##| ##_____/  \  ###/ | ##_____/| ##  | ##| ##    ##     ")
+    print(r"    |  ######/ /#######/|  #######   \  #/  |  #######| ##  | ##|  ######/     ")
+    print(r"     \______/ |_______/  \_______/    \_/    \_______/|__/  |__/ \______/      ")
+    print("\n                                www.8sevenC.xyz                                ")
+    print("\n")
+    
 if __name__ == "__main__":
     main()
